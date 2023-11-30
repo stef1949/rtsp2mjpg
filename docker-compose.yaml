@@ -13,7 +13,7 @@ services:
       # Override the env vars below as needed
       RTSP_URL: rtsp://freja.hiof.no:1935/rtplive/definst/hessdalen03.stream
       FFSERVER_LOG_LEVEL: error
-      FFMPEG_LOG_LEVEL: warning
+      FFMPEG_LOG_LEVEL: error
       FFMPEG_INPUT_OPTS: -use_wallclock_as_timestamps 1
       FFMPEG_OUTPUT_OPTS: -async 1 -vsync 1
     healthcheck:
